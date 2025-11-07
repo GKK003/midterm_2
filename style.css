@@ -266,6 +266,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     height: 320vh;
+    overflow-x: hidden;
   }
 
   .main_div {
@@ -359,6 +360,7 @@ span {
     width: 340px;
     flex-wrap: wrap;
     height: 420vh;
+    overflow-x: hidden;
   }
 
   .main_div {
