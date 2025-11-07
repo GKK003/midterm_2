@@ -350,7 +350,7 @@ span {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   body {
     display: flex;
     flex-direction: column;
