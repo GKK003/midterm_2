@@ -360,7 +360,6 @@ span {
     width: 400px;
     flex-wrap: wrap;
     height: 420vh;
-    overflow-x: hidden;
   }
 
   .main_div {
