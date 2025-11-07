@@ -369,6 +369,7 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
+    margin: x auto;
   }
 
   .first_line {
