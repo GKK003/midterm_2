@@ -16,7 +16,8 @@ body {
 }
 
 .main_div {
-  width: 1110px;
+  width: 90%;
+  max-width: 1110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +28,8 @@ body {
 .first_line {
   display: flex;
   justify-content: space-between;
-  width: 1110px;
-  height: 58px;
+  width: 100%;
+  height: auto;
 }
 
 .orange_box {
@@ -61,6 +62,7 @@ body {
   background-color: #162542;
   color: white;
 }
+
 .order_text {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
@@ -73,11 +75,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 125px;
+  flex-wrap: wrap;
 }
 
 .type {
-  width: 445px;
-  height: 312px;
+  width: 40%;
+  min-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +109,7 @@ body {
   gap: 45px;
   justify-content: start;
   align-items: center;
-  width: 445px;
+  width: 100%;
   padding-top: 20px;
 }
 
@@ -144,16 +147,40 @@ body {
   text-transform: uppercase;
 }
 
+.first_image {
+  max-width: 100%;
+  height: auto;
+  width: 40%;
+  min-width: 250px;
+}
+
 .third_line {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 140px;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
 }
 
 .photo_div {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+
+.second_image {
+  max-width: 100%;
+  height: auto;
+  width: 30%;
+  min-width: 100px;
+}
+
+.third_image {
+  max-width: 100%;
+  height: auto;
+  width: 55%;
+  min-width: 100px;
 }
 
 .mechanical_div {
@@ -161,7 +188,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 255px;
+  width: 25%;
+  min-width: 200px;
   gap: 30px;
 }
 
@@ -188,11 +216,13 @@ body {
   align-items: center;
   gap: 20px;
   padding-top: 80px;
+  flex-wrap: wrap;
 }
 
 .box4_div {
-  width: 255px;
-  height: 323px;
+  width: 20%;
+  min-width: 200px;
+  height: auto;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -242,111 +272,62 @@ span {
 
 .decoration {
   background-color: #e8eff2;
-  width: 255px;
+  width: 20%;
+  min-width: 150px;
   height: 240px;
   position: absolute;
   top: 135px;
-  left: 1305px;
+  right: -10%;
   border-radius: 20px;
 }
 
 .decoration1 {
   background-color: #e8eff2;
-  width: 255px;
+  width: 20%;
+  min-width: 150px;
   height: 236px;
   border-radius: 20px;
   position: absolute;
   top: 890px;
-  left: -110px;
+  left: -8%;
 }
 
 @media (max-width: 800px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 320vh;
-    overflow-x: hidden;
-  }
-
   .main_div {
-    width: 750px;
-  }
-
-  .first_line {
-    width: 700px;
+    width: 95%;
   }
 
   .second_line {
-    width: 750px;
     gap: 150px;
   }
 
-  .first_image {
-    width: 475px;
-    height: 425px;
-    margin-right: -138px;
+  .type {
+    width: 45%;
   }
 
-  .type {
-    width: 200px;
-    height: 300px;
+  .first_image {
+    width: 50%;
+  }
+
+  .second_image,
+  .third_image {
+    width: 20%;
+  }
+
+  .photo_div {
     display: flex;
     justify-content: center;
-    align-items: start;
-  }
-
-  .type_text {
-    font-size: 38px;
-  }
-
-  .improve_text {
-    font-size: 16px;
-  }
-
-  .pre {
-    width: 140px;
-    height: 45px;
-  }
-
-  .pre_white {
-    font-size: 12px;
-  }
-
-  .release_text {
-    font-size: 10px;
-  }
-
-  .pre_release_div {
-    display: flex;
-    gap: 10px;
-    width: 230px;
-    justify-content: start;
-    align-items: center;
-  }
-
-  .third_line {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .mechanical_div {
-    display: flex;
-    flex-direction: row;
-    width: 720px;
-    gap: 110px;
+    width: 60%;
   }
 
-  .box_4 {
-    display: flex;
-    flex-wrap: wrap;
+  .box4_div {
+    width: 40%;
   }
 
-  .decoration {
-    display: none;
-  }
-
+  .decoration,
   .decoration1 {
     display: none;
   }
@@ -354,126 +335,60 @@ span {
 
 @media (max-width: 400px) {
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    flex-wrap: wrap;
-    height: 420vh;
+    padding-top: 40px;
   }
 
   .main_div {
-    width: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    margin: x auto;
+    width: 95%;
   }
 
   .first_line {
-    width: 688px;
-  }
-
-  .orange_box {
-    margin-left: 40px;
-  }
-
-  .type {
-    width: 300px;
-    margin-left: 40px;
-    margin-right: 20px;
-  }
-
-  .second_line {
-    display: flex;
     flex-direction: column;
-    width: 350px;
-    justify-content: center;
-    align-items: start;
-    gap: 50px;
+    gap: 20px;
   }
 
   .order_now {
-    margin-right: 390px;
     width: 140px;
     height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .first_image {
-    width: 290px;
-    height: 280px;
-    margin-left: 40px;
-  }
-
-  .order_text {
-    font-size: 15px;
-  }
-
-  .photo_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-  }
-
-  .third_line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-  }
-
-  .second_image {
-    width: 119px;
-    height: 183px;
-    margin-left: -30px;
-  }
-
-  .third_image {
-    width: 190px;
-    height: 183px;
-  }
-
-  .mechanical_div {
-    display: flex;
+  .second_line {
     flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    margin-left: 40px;
-    margin-right: 20px;
+    gap: 50px;
   }
 
-  .mechanical_text1 {
-    font-size: 35px;
+  .type {
+    width: 90%;
     text-align: center;
   }
 
-  .mechanical_text2 {
-    font-size: 13px;
+  .first_image {
+    width: 80%;
+  }
+
+  .third_line {
+    flex-direction: column;
+  }
+
+  .photo_div {
+    justify-content: center;
+  }
+
+  .mechanical_div {
+    width: 90%;
+    text-align: center;
   }
 
   .box_4 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 350px;
+    gap: 40px;
   }
 
   .box4_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
     text-align: center;
   }
 
   footer {
-    width: 350px;
     text-align: center;
   }
 }
