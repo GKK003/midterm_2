@@ -442,4 +442,8 @@ span {
     display: flex;
     flex-direction: column;
   }
+
+  .type_text {
+    font-size: 30px;
+  }
 }
