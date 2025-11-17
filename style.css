@@ -305,6 +305,10 @@ span {
     width: 45%;
   }
 
+  .type_text {
+    font-size: 40px;
+  }
+
   .first_image {
     width: 50%;
   }
